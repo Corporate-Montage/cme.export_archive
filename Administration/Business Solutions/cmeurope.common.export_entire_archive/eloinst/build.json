@@ -1,0 +1,12 @@
+{
+  "setupName": "cmeurope.common.export_entire_archive",
+  "fileNamePrefix": "",
+  "workflowTemplates": [
+    "cmeurope.common.export_entire_archive.wf.Export"
+  ],
+  "sordTypes": [
+  ],
+  "preserveAclUserNames": [
+    "Solutions"
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "type": "ADVANCED_ACTION",
+  "ribbons": [
+    {
+      "ribbonTab": {
+        "name": "ORGANIZE",
+        "text": "test",
+        "iconName": "test",
+        "position": 12,
+        "access": {
+          "document": false,
+          "folder": false,
+          "multi": false,
+          "solTypes": []
+        }
+      },
+      "buttongroup": {
+        "name": "EXPORT_ENTIRE_ARCHIVE",
+        "mode": "",
+        "text": "Export Entire Archive",
+        "position": 36
+      },
+      "button": {
+        "name": "BTN_CMEUROPE_EXPORT_CONTACTS_CSV",
+        "text": "Export entire archive",
+        "splitText": "export entire archive",
+        "tooltipText": "",
+        "access": {
+          "document": true,
+          "folder": true,
+          "multi": true,
+          "solTypes": [],
+          "conditions": []
+        },
+        "web": {
+          "iconName": "",
+          "smallIcon": "",
+          "smallIconHighRes": "",
+          "bigIcon": "",
+          "bigIconHighRes": ""
+        },
+        "jc": {
+          "buttonId": ""
+        },
+        "position": 21,
+        "asTile": false,
+        "iconName": ""
+      }
+    }
+  ],
+  "actionType": 3,
+  "action": {
+    "locale": {
+      "errorDlgTitle": "error"
+    },
+    "fct": "RF_sol_common_action_Standard",
+    "cfgTemplate": "{\"objId\":\"{{objId}}\",\"$name\":\"cmeurope.common.export_entire_archive\",\"$wf\":{\"name\":\"\",\"template\":{\"name\":\"cmeurope.common.export_entire_archive.wf.Export\"}},\"$events\":[{\"id\":\"GOTO\",\"onWfStatus\":\"EXPORTED\",\"message\":\"\"},{\"id\":\"REFRESH\",\"onWfStatus\":\"CREATED\",\"message\":\"\"},{\"id\":\"FEEDBACK\",\"onWfStatus\":\"CREATED\",\"message\":\"ELO archive exported succsessfully!\"}]}"
+  }
+}
